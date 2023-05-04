@@ -1,0 +1,441 @@
+{{!< default_bootstrap}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{> navigation }}
+
+{{!-- The main content area --}}
+<main class="home">
+  <header class="heading">
+    <div class="container position-relative">
+      <!-- <a class="ic-chat" href="#"><img src="assets/images/ic-chat.svg" alt=""></a> -->
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-column mb-0">
+          <p class="text-secondary fs-5 text-center">
+            We're hiring! Visit our <a class="text-secondary" href="#">Careers</a> page
+          </p>
+          <h1 class="text-center position-relative">
+            Creating software solutions
+            <br>
+            that work
+          </h1>
+          <a href="/contact" class="btn btn-primary mx-auto">Start your Project</a>
+        </div>
+      </div><!-- /.row -->
+    </div>
+  </header>
+  <section class="home-intro">
+    <h2 class="text-center h2 mb-5">
+      State-of-the-art
+      <br>
+      front-end & back-end systems
+    </h2>
+    <p class="text-center fs-5 text-black-50 mb-12">
+      Why state-of-the-art? Because every app we create is a unique piece of work
+      <br>
+      which our team, in cooperation with you, has dedicated its time to
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card d-block">
+            <img src="{{ asset "images/ic-web.svg"}}" alt="">
+            <div class="card-body">
+              <h3 class="h4 card-title">Web Development</h3>
+              <p class="card-text">
+                Our developers and designers are there to find the best and the most creative solutions for you  and help you end up with a reliable product and user experience
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card d-block">
+            <img src="{{ asset "images/ic-mobile.svg"}}" alt="">
+            <h3 class="h4 card-title">Custom Mobile Apps</h3>
+            <p class="card-text">
+              Mobile apps are timeless. With their number constantly rising, we make sure to deliver an amazing experience combined with high performance across multiple platforms
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card d-block">
+            <img src="{{ asset "images/ic-ux.svg"}}" alt="">
+            <h3 class="h4 card-title highlight">User Experience</h3>
+            <p class="card-text">
+              A good user experience should speak to the end user's emotions. Why? Because it's your user's perception of the product that is going to set you apart from all the other apps out there and your competition
+            </p>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-product">
+    <h2 class="text-center h2">
+      Round-the-clock care for your products
+    </h2>
+    <p class="text-center fs-5 text-black-50">
+      We always know what is ongoing and have a good advice
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src="{{ asset "images/product-carex2.png"}}" class="img-fluid" alt="">
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-ux">
+    <h2 class="text-center h2 mb-5">
+      Quality code which will be presented
+      <br>
+      through excellent UX
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1">
+          <p class="text-center fs-5">
+            The Kolosek team consists of development and designer teams which make sure that clients get to fully
+            experience our product development process — from coming up with a project idea, to design and front-end
+            development, all the way to back-end development
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-other">
+    <h2 class="text-center h2">
+      ..besides
+    </h2>
+    <div class="container">
+      <div class="row h5">
+        <div class="col-4">
+          <ul class="list-unstyled">
+            <li>Product research</li>
+            <li>UI UX Design</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="list-unstyled">
+            <li>Test driven development</li>
+            <li>DevOps</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="list-unstyled">
+            <li>Project management</li>
+            <li>Marketing & Sales</li>
+          </ul>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-featured home-featured-our">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
+          <h2 class="text-center h2">
+            Our products
+          </h2>
+          <p class="text-center fs-5">
+            We are continuously creating new solutions that transform the way you work
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="container">
+      <div class="row home-featured-row">
+        <div class="col-6">
+          <img src="{{ asset "images/featured-ruby-ci.jpg"}}" alt="">
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <h3 class="card-title">Ruby.ci</h3>
+              <div class="project-services-icons">
+                <img src="{{ asset "images/ic-research.svg"}}" alt="">
+                <img src="{{ asset "images/ic-design.svg"}}" alt="">
+                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+              </div>
+            </div>
+            <h4 class="h5">Best CI platform for your Rails application</h4>
+            <p class="card-text">
+              2-min setup with no extra code, tools & UI built for your Ruby on Rails Application
+              <br><br>
+              Most complex code for best user experience
+              Combining Elixir, Ruby and React
+            </p>
+            <a href="https://ruby.ci" class="btn btn-outline-primary btn-outline-secondary btn-sm" target="_blank" data-text="Check out">
+              <span>
+                Check out
+              </span>
+            </a>
+          </div>
+        </div>
+      </div><!-- /.row -->
+      <div class="row home-featured-row">
+        <div class="col-6">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <h3 class="card-title">Sniffler</h3>
+              <div class="project-services-icons">
+                <img src="{{ asset "images/ic-research.svg"}}" alt="">
+                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+              </div>
+            </div>
+            <h4 class="h5">The most attentive code reviewer</h4>
+            <p class="card-text">
+              When a GitHub pull request is opened or updated Sniffler simply integrates with your workflow
+              <br><br>
+              Sniffler scans and reports errors with your code and helps you fix them whenever possible
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-outline-secondary btn-sm" target="_blank" data-text="Check out">
+              <span>
+                Check out
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="{{ asset "images/featured-sniffler.jpg"}}" alt="">
+        </div>
+      </div><!-- /.row -->
+      <div class="row home-featured-row">
+        <div class="col-6">
+          <img src="{{ asset "images/featured-git-puller.jpg"}}" alt="">
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <h3 class="card-title">GitPuller</h3>
+              <div class="project-services-icons">
+                <img src="{{ asset "images/ic-research.svg"}}" alt="">
+                <img src="{{ asset "images/ic-design.svg"}}" alt="">
+                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+              </div>
+            </div>
+            <h4 class="h5">Pull request manager </h4>
+            <p class="card-text">
+              Get the complete transparency in your product development process without risking access to Intelectual Property
+              <br><br>
+              GitPuller does not require actual access to the code on Github
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-outline-secondary btn-sm" target="_blank" data-text="Check out">
+              <span>
+                Check out
+              </span>
+            </a>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-featured">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
+          <h2 class="text-center h2">
+            Featured projects
+          </h2>
+          <p class="text-center fs-5">
+            Here are a few recent works we are proud of. For more check our <a href="#">Portfolio</a>
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="container">
+      <!-- <div class="col-6">
+        <div class="card">
+          <img src="assets/images/featured-project-1x2.png" alt="" >
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Rubi.ci </h3>
+            <div class="project-services-icons">
+              <img src="assets/images/ic-design.svg" alt="" >
+              <img src="assets/images/ic-development.svg" alt="" >
+              <img src="assets/images/ic-support.svg" alt="" >
+            </div>
+          </div>
+          <p class="card-text">
+            Best CI platform for your Rails application
+            · 2-min setup with no extra code, tools & UI built for your Ruby on Rails Application
+          </p>
+          <a href="https://ruby.ci" class="card-link" target="_blank">ruby.ci</a>
+        </div>
+      </div> -->
+      <div class="row home-featured-row">
+        <div class="col-6">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <h3 class="card-title">The Next Closet</h3>
+              <div class="project-services-icons">
+                <img src="{{ asset "images/ic-research.svg"}}" alt="">
+                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+              </div>
+            </div>
+            <h4 class="h5">Marketplace</h4>
+            <p class="card-text">
+              The largest marketplace for second hand designer brands in Netherlands
+              <br>
+              <br>
+              Building and maintaining web and mobile app with millions of visitors per month
+            </p>
+            <a href="https://thenextcloset.com" class="btn btn-outline-primary btn-outline-secondary btn-sm" target="_blank" data-text="Check out">
+              <span>
+                Check out
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="{{ asset "images/featured-next-closet.jpg"}}" alt="">
+        </div>
+      </div><!-- /.row -->
+      <div class="row home-featured-row">
+        <div class="col-6">
+          <img src="{{ asset "images/featured-oschool.jpg"}}" alt="">
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <h3 class="card-title">O.school</h3>
+              <div class="project-services-icons">
+                <img src="{{ asset "images/ic-research.svg"}}" alt="">
+                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+              </div>
+            </div>
+            <h4 class="h5">Educational platform</h4>
+            <p class="card-text">
+              Judgment-free, science-based sexual wellness platform · Initial product planning and execution · A virtual classroom app, based on live streaming technology and moderated chat · Featured on Techcrunch
+            </p>
+            <a href="https://www.o.school/" class="btn btn-outline-primary btn-outline-secondary btn-sm" target="_blank" data-text="Check out">
+              <span>
+                Check out
+              </span>
+            </a>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-tabbed">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
+          <h2 class="text-center h2 mb-5">
+            Prioritizing privacy & security
+          </h2>
+          <p class="text-center fs-5">
+            We believe in process driven development & privacy of the data
+            <br>
+            ISO 9001:2013, ISO 27001:2013 USA certification
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-quality-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <span>
+                  Build quality software faster!
+                </span>
+                With our automated optimization tools
+              </button>
+              <button class="nav-link" id="v-pills-no-searching-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <span>Monitoring and responding on errors</span>
+                So your users stay using the product
+              </button>
+              <button class="nav-link" id="v-pills-report-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                <span>Quality product is properly tested one</span>
+                High test coverage rate, less complaints from users
+              </button>
+              <button class="nav-link" id="v-pills-on-track-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                <span>Inside out reports</span>
+                Know exactly what your product is actually doing
+              </button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-quality-tab" tabindex="0">
+                <img src="{{ asset "images/interface.png"}}" alt="">
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-no-searching-tab" tabindex="0">
+                <img src="{{ asset "images/performance.png"}}" alt="">
+              </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-report-tab" tabindex="0">
+                <img src="{{ asset "images/traffic.png"}}" alt="">
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-on-track-tab" tabindex="0">
+                <img src="{{ asset "images/builds.png"}}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section><!-- /section -->
+  <section class="partners home-partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            TRUSTED BY
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="#"><img src="{{ asset "images/logo-closet.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-boardspan.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-squire.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-simone-leblanc.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-listium.png"}}" class="img-fluid" alt=""></a>
+        </div>
+        <div class="col-12">
+          <a href="#"><img src="{{ asset "images/logo-oschool.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-movie-pilot.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-wrap.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-ruby-ci.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-versa-commerce.png"}}" class="img-fluid" alt=""></a>
+          <a href="#"><img src="{{ asset "images/logo-style-myle.png"}}" class="img-fluid" alt=""></a>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
+          <h2 class="text-center h2">
+            From the blog
+          </h2>
+          <p class="text-center fs-5">
+            Usually we are writing about what we are interested in doing. Visit our <a href="/blog">Blog</a> for more
+          </p>
+        </div>
+      </div><!-- /.row -->
+
+      <div class="row">
+        {{#get "posts" filter="featured:true" limit="1" include="authors,tags"}}
+          {{#foreach posts}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card-home"}}
+
+          {{/foreach}}
+        {{/get}}
+
+        {{#get "posts" filter="featured:false" limit="5" include="authors,tags"}}
+          {{#foreach posts}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card-home"}}
+
+          {{/foreach}}
+        {{/get}}
+      </div>
+    </div><!-- /.container -->
+  </section><!-- /section -->
+</main><!-- /main -->
+
+{{> footer }}

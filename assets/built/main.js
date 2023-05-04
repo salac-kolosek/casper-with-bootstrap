@@ -1,0 +1,2 @@
+$(document).ready(function(){$(".preloader").fadeOut("slow"),$(function(){$('[data-toggle="tooltip"]').tooltip()}),$(function(){$('[data-toggle="popover"]').popover()})});
+//# sourceMappingURL=main.js.map

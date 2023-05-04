@@ -1,0 +1,30 @@
+<div class="col-4">
+  <div class="card d-block">
+    {{#primary_tag}}
+      <div class="card-header">
+        {{name}}
+      </div>
+    {{/primary_tag}}
+    <div class="card-body">
+      <a href="{{url}}" style="text-decoration: none;">
+        <h3 class="card-title">{{title}}</h3>
+      </a>
+      <a href="{{url}}" style="text-decoration: none;">
+        <p class="card-text">
+          {{excerpt}}
+        </p>
+      </a>
+    </div>
+    {{#primary_author}}
+      <div class="card-footer">
+        <img src={{profile_image}} class="rounded-circle" style="width: 40px; height: 40px;" alt="">
+        <p>
+          <span>{{date ../published_at format="MMMM D, YYYY"}}</span>
+          {{#if ../reading_time}}
+            <span>· {{../reading_time}} min read</span>
+          {{/if}}
+        </p>
+      </div>
+    {{/primary_author}}
+  </div>
+</div>

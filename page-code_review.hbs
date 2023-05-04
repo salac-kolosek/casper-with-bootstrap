@@ -1,0 +1,192 @@
+{{!< default_bootstrap}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{> navigation }}
+
+<main class="code-review">
+  <header class="heading">
+    <div class="container position-relative">
+      <h1 class="text-center">
+        Code Review
+      </h1>
+      <p class="fs-5 text-center">
+        A code/software review is the process of testing your code parameters. Once you have completed the project and created a GitHub repository, you will be able to send it to us and we will check it out
+      </p>
+      <button class="btn btn-primary mx-auto">Check your code</button>
+    </div>
+  </header>
+  <section class="code-review-why title-card-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-0">
+          <h2 class="text-center h2 no-after">
+            Why should you do this?
+          </h2>
+        </div>
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-5 offset-1">
+          <div class="card d-block">
+            <div class="card-body">
+              <h3 class="h5 card-title">
+                Because no one can ever say No
+                <br>
+                to a FREE Сode Review!
+              </h3>
+              <p class="card-text">
+                The main goal of this process is to provide you with an expert analysis and suggestions on how you can improve your product
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card d-block">
+            <div class="card-body">
+              <h3 class="h5 card-title">
+                Here is how the process goes:
+              </h3>
+              <p class="card-text">
+                After you have submitted your code, you will receive a review of it, including the test coverage analysis.
+                We will schedule a call  where we can go through the corrections with you, to better elaborate the result
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="code-review-options title-card-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-0">
+          <h2 class="text-center h2">
+            Code Review options
+          </h2>
+        </div>
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-5 offset-1">
+          <div class="card d-block">
+            <img src="assets/images/ic-development.svg" alt="">
+            <div class="card-body">
+              <h3 class="h4 card-title text-center">
+                Code Quality
+              </h3>
+              <p class="card-text">
+                The code should be reliable—errors should be handled properly. Try using try-catches everywhere where there's a possibility for an error, so the user never gets something unexpected. Remember the DRY (Don’t Repeat Yourself) principle? Everything that can be reused should be made into a service, a util function, etc. Please be sure to write generic classes and interfaces
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card d-block">
+            <img src="assets/images/ic-settings.svg" alt="">
+            <div class="card-body">
+              <h3 class="h4 card-title text-center">
+                Code Maintainability
+              </h3>
+              <p class="card-text">
+                Here are a few Don’ts you should keep in mind: don't use nested loops if there's no need for them and don't use loggers. Your code should be: readable, easily testable, easy to debug and configurable. Keep in mind that if we can’t get an idea of what is going on in the code just by looking at it, it is probably not the best-written code
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-5 offset-1">
+          <div class="card d-block">
+            <img src="assets/images/ic-scale.svg" alt="">
+            <div class="card-body">
+              <h3 class="h4 card-title text-center">
+                Project Architecture
+              </h3>
+              <p class="card-text">
+                The project should follow a certain architecture (MVC, Client-Server, Service-oriented etc.) and should use the proper code, design patterns, and technologies. The code should also be split into multiple layers and tiers (Presentation, Business and Data layers)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card d-block">
+            <img src="assets/images/ic-more.svg" alt="">
+            <div class="card-body">
+              <h3 class="h4 card-title text-center">
+                + Many more parameters
+              </h3>
+              <p class="card-text">
+                We will be testing many other parameters in this process, including code formatting, the usage of framework features, speed optimization, code security, code performance and code reusability
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 offset-2">
+          <h2 class="text-center h1">
+            Let’s check your code
+          </h2>
+          <form action="#">
+            <div class="row g-5">
+              <div class="col">
+                <label for="inputFullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="inputFullName">
+              </div>
+              <div class="col">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+            </div><!-- /.row -->
+            <div class="row g-5">
+              <div class="col">
+                <label for="inputCompany" class="form-label">Company</label>
+                <input type="text" class="form-control" id="inputCompany">
+              </div>
+              <div class="col">
+                <label for="inputGit" class="form-label">Enter URL here (github or similar)</label>
+                <input type="email" class="form-control" id="inputGit">
+              </div>
+            </div><!-- /.row -->
+            <div>
+              <label for="message" class="form-label">Why are you using our service?</label>
+              <textarea class="form-control" id="message"></textarea>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioFull" id="flexRadioBasic" checked>
+              <label class="form-check-label" for="flexRadioBasic">
+                Basic review (free)
+              </label>
+            </div>
+            <div class="form-check mb-5">
+              <input class="form-check-input" type="radio" name="flexRadioFull" id="flexRadioFull">
+              <label class="form-check-label" for="flexRadioFull">
+                Full review (price calculated by type and size of project)
+              </label>
+            </div>
+            <div class="mb-5">
+              <p class="fs-6">
+                *We hold the right to reject code review if it doesn’t match our technologies, project size or similar criteria
+                <br><br>
+                If full review is requested our team will contact you with further details based on project size, type and technologies used
+              </p>
+            </div>
+            <div class="d-flex pt-2">
+              <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+            </div>
+            <div>
+              <p class="text-center">
+                By clicking "Submit" you agree to the Privacy Policy and Terms of Use
+              </p>
+            </div>
+          </form>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+</main><!-- /main -->
+
+{{> footer }}
