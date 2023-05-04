@@ -297,30 +297,23 @@ into the {body} of the default.hbs template --}}
           <h2 class="text-center h1">
             Make it happen
           </h2>
-          <form action="#">
-            <div class="row g-5">
-              <div class="col">
-                <label for="inputFullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="inputFullName">
-              </div>
-              <div class="col">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail">
-              </div>
-            </div><!-- /.row -->
-            <div>
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message"></textarea>
-            </div>
-            <div class=" d-flex">
-              <button type="submit" class="btn btn-primary mx-auto">Start your Project </button>
-            </div>
-            <div>
-              <p class="text-center">
-                By clicking "Start your Project" you agree to the Privacy Policy and Terms of Use
-              </p>
-            </div>
-          </form>
+          <div class="posting-form cover">
+            <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "1118038",
+              region: "na1",
+              formId: "0207a4e3-9ea2-4b7b-a5d2-b8eb561ba7dd",
+              locale: 'en',
+              version: "V2_PRERELEASE",
+              onFormSubmit: function($form) {
+                $('.cover').removeClass('cover');
+                ga('send', 'event', 'conversion', 'contact');
+                setFormParameters($form)
+              } 
+            });
+            </script>
+          </div>
         </div>
       </div><!-- /.row -->
     </div><!-- /.container -->
