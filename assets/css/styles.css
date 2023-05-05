@@ -12648,7 +12648,7 @@ main.about {
   height: 10.1rem;
   position: absolute;
   left: -1.7rem;
-  top: 2.8rem;
+  top: -2.4rem;
 }
 .about-stats div[class^=col-]:first-child p span {
   margin-right: 0.7rem;
@@ -12669,7 +12669,7 @@ main.about {
   width: 15rem;
   height: 0.5rem;
   position: absolute;
-  right: 7.6rem;
+  right: 4.6rem;
   bottom: -1rem;
 }
 .about-stats div[class^=col-]:last-child p span {
