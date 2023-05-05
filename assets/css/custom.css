@@ -1,0 +1,165 @@
+/* header */
+
+.header-top {
+  background-color: #fff;
+  width: 100%;
+  z-index: 3;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.header-top ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header-top li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header-top li a:hover,
+.header-top .menu-btn:hover {
+  color: #A8A8A8;
+}
+
+.header-top .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+@media (min-width: 1280px) {
+  .header-top .logo {
+    padding-left: 20%;
+  }
+
+  .header-top .menu {
+    padding-right: 10%;
+  }
+}
+
+/* menu */
+
+.header-top .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header-top .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header-top .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header-top .menu-icon .navicon:before,
+.header-top .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header-top .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header-top .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header-top .menu-btn {
+  display: none;
+}
+
+.header-top .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header-top .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header-top .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header-top .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header-top .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-top .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header-top li {
+    float: left;
+  }
+  .header-top li a {
+    padding: 6px 20px;
+  }
+
+  .menu  > li:first-child { 
+    padding-top: 7px;
+  }
+
+  .header-top .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header-top .menu-icon {
+    display: none;
+  }
+}
+
+.footer-link {
+  color: #E5E5E5;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+a.portfolio {
+  position: relative;
+}
+a.portfolio img {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 1rem;
+  right: -1.9rem;
+}
