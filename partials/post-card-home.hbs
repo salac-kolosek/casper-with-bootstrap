@@ -19,7 +19,9 @@
       <div class="card-footer">
         <img src={{profile_image}} class="rounded-circle" style="width: 40px; height: 40px;" alt="">
         <p>
+          {{#if false }}
           <span>{{date ../published_at format="MMMM D, YYYY"}}</span>
+          {{/if}}
           {{#if ../reading_time}}
             <span>· {{../reading_time}} min read</span>
           {{/if}}
