@@ -1,0 +1,9 @@
+<nav class="pagination" role="navigation" style="display: block">
+  {{#if prev}}
+      <a class="newer-posts text-lg font-medium mr-2" href="{{page_url prev}}">Previous</a>
+  {{/if}}
+  <span class="page-number text-lg font-medium">Page {{page}} of {{pages}}</span>
+  {{#if next}}
+      <a class="older-posts text-lg font-medium ml-2" href="{{page_url next}}">Next</a>
+  {{/if}}
+</nav>

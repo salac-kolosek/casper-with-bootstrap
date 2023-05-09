@@ -2,6 +2,7 @@
 
 .header-top {
   background-color: #fff;
+  position: fixed;
   width: 100%;
   z-index: 3;
   padding-top: 30px;
@@ -162,4 +163,16 @@ a.portfolio img {
   margin: 0;
   top: 1rem;
   right: -1.9rem;
+}
+
+.info-container {
+  position: fixed;
+  top: 140px;
+  right: 150px;
+}
+
+@media (max-width: 1650px) {
+  .info-container {
+    display: none;
+  }
 }
