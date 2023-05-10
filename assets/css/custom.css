@@ -171,12 +171,8 @@ a.portfolio img {
   right: 150px;
 }
 
-/*@media (max-width: 1650px) {
+@media (max-width: 1650px) {
   .info-container {
     display: none;
   }
-}*/
-
-.info-container {
-  display: none;
 }
