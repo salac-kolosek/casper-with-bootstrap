@@ -26,8 +26,8 @@ into the {body} of the default.hbs template --}}
         </div>
       </div><!-- /.row -->
       <div class="row">
-        <div class="col-5 offset-1">
-          <div class="card d-block">
+        <div class="col-12 col-md-5 offset-md-1">
+          <div class="card d-block mb-5 mb-md-0">
             <div class="card-body">
               <h3 class="h5 card-title">
                 Because no one can ever say No
@@ -40,7 +40,7 @@ into the {body} of the default.hbs template --}}
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-md-5">
           <div class="card d-block">
             <div class="card-body">
               <h3 class="h5 card-title">
@@ -56,7 +56,7 @@ into the {body} of the default.hbs template --}}
       </div><!-- /.row -->
     </div><!-- /.container -->
   </section><!-- /section -->
-  <section class="code-review-options title-card-section" style="margin-bottom: 70px;">
+  <section class="code-review-options title-card-section">
     <div class="container">
       <div class="row">
         <div class="col-12 mb-0">
@@ -66,9 +66,9 @@ into the {body} of the default.hbs template --}}
         </div>
       </div><!-- /.row -->
       <div class="row">
-        <div class="col-5 offset-1">
+        <div class="col-12 col-md-5 offset-md-1">
           <div class="card d-block">
-            <img src="assets/images/ic-development.svg" alt="">
+            <img src="{{ asset "images/ic-development.svg"}}" alt="">
             <div class="card-body">
               <h3 class="h4 card-title text-center">
                 Code Quality
@@ -79,9 +79,9 @@ into the {body} of the default.hbs template --}}
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-md-5">
           <div class="card d-block">
-            <img src="assets/images/ic-settings.svg" alt="">
+            <img src="{{ asset "images/ic-settings.svg"}}" alt="">
             <div class="card-body">
               <h3 class="h4 card-title text-center">
                 Code Maintainability
@@ -94,9 +94,9 @@ into the {body} of the default.hbs template --}}
         </div>
       </div><!-- /.row -->
       <div class="row">
-        <div class="col-5 offset-1">
+        <div class="col-12 col-md-5 offset-md-1">
           <div class="card d-block">
-            <img src="assets/images/ic-scale.svg" alt="">
+            <img src="{{ asset "images/ic-scale.svg"}}" alt="">
             <div class="card-body">
               <h3 class="h4 card-title text-center">
                 Project Architecture
@@ -107,9 +107,9 @@ into the {body} of the default.hbs template --}}
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-md-5">
           <div class="card d-block">
-            <img src="assets/images/ic-more.svg" alt="">
+            <img src="{{ asset "images/ic-more.svg"}}" alt="">
             <div class="card-body">
               <h3 class="h4 card-title text-center">
                 + Many more parameters
@@ -124,72 +124,9 @@ into the {body} of the default.hbs template --}}
     </div><!-- /.container -->
   </section><!-- /section -->
   <section class="contact">
-    {{!-- <div class="container">
-      <div class="row">
-        <div class="col-8 offset-2">
-          <h2 class="text-center h1">
-            Let’s check your code
-          </h2>
-          <form action="#">
-            <div class="row g-5">
-              <div class="col">
-                <label for="inputFullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="inputFullName">
-              </div>
-              <div class="col">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail">
-              </div>
-            </div><!-- /.row -->
-            <div class="row g-5">
-              <div class="col">
-                <label for="inputCompany" class="form-label">Company</label>
-                <input type="text" class="form-control" id="inputCompany">
-              </div>
-              <div class="col">
-                <label for="inputGit" class="form-label">Enter URL here (github or similar)</label>
-                <input type="email" class="form-control" id="inputGit">
-              </div>
-            </div><!-- /.row -->
-            <div>
-              <label for="message" class="form-label">Why are you using our service?</label>
-              <textarea class="form-control" id="message"></textarea>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioFull" id="flexRadioBasic" checked>
-              <label class="form-check-label" for="flexRadioBasic">
-                Basic review (free)
-              </label>
-            </div>
-            <div class="form-check mb-5">
-              <input class="form-check-input" type="radio" name="flexRadioFull" id="flexRadioFull">
-              <label class="form-check-label" for="flexRadioFull">
-                Full review (price calculated by type and size of project)
-              </label>
-            </div>
-            <div class="mb-5">
-              <p class="fs-6">
-                *We hold the right to reject code review if it doesn’t match our technologies, project size or similar criteria
-                <br><br>
-                If full review is requested our team will contact you with further details based on project size, type and technologies used
-              </p>
-            </div>
-            <div class="d-flex pt-2">
-              <button type="submit" class="btn btn-primary mx-auto">Submit</button>
-            </div>
-            <div>
-              <p class="text-center">
-                By clicking "Submit" you agree to the Privacy Policy and Terms of Use
-              </p>
-            </div>
-          </form>
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container --> --}}
-
     <div class="container">
       <div class="row">
-        <div class="col-8 offset-2">
+        <div class="col-10 offset-1 col-md-8 offset-md-2">
           <h2 class="text-center h1">
             Make it happen
           </h2>

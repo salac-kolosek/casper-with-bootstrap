@@ -4,39 +4,139 @@ into the {body} of the default.hbs template --}}
 
 {{> navigation }}
 
-<main class="featured">
-  <header class="heading" style="margin-bottom: 0px;">
-    <div class="container position-relative">
+<main class="portfolio">
+  <section class="home-ux portfolio-ux">
+    <h2 class="text-center h1">
+      Quality code which will be presented
+      <br>
+      through excellent UX
+    </h2>
+    <div class="container">
       <div class="row">
-        <div class="col-12 d-flex align-items-center flex-column mb-0">
-          <h1 class="text-center position-relative">
-            Featured projects
-          </h1>
-          <p class="text-secondary fs-5 text-center">
-            Over the years, we have created a number of high-quality apps using different technologies
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <p class="text-center fs-5">
+            Our competence in custom software development has helped launch
+            <br>
+            multiple successful startup companies around the world
           </p>
         </div>
       </div><!-- /.row -->
-      <div class="row featured-technologies">
-        <div class="col-10 offset-1 d-flex ali-items-center justify-content-center">
-          <img src="{{ asset "images/ic-rails.svg"}}" alt="">
-          <img src="{{ asset "images/ic-react.svg"}}" alt="">
-          <img src="{{ asset "images/ic-node.svg"}}" alt="">
-          <img src="{{ asset "images/ic-ember.svg"}}" alt="">
-          <img src="{{ asset "images/ic-vue.svg"}}" alt="">
-          <img src="{{ asset "images/ic-ruby-horizontal.svg"}}" alt="">
-          <img src="{{ asset "images/ic-js.svg"}}" alt="">
-          <img src="{{ asset "images/ic-phoenix.svg"}}" alt="">
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="about-stats portfolio-stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-2 offset-xl-1 mb-5 mb-xl-0 justify-content-center justify-content-mb-start">
+          <p>
+            <span class="h2">11</span>
+            <strong class="h5 mb-0">years</strong>
+          </p>
+        </div>
+        <div class="col-12 col-xl-2 mb-5 mb-xl-0 py-4 py-xl-0 justify-content-center justify-content-mb-start">
+          <p>
+            <span class="h2">30</span>
+            <strong class="h5 mb-0">employes</strong>
+          </p>
+        </div>
+        <div class="col-12 col-xl-3 justify-content-center pt-4 pt-xl-0 mb-5 mb-xl-0">
+          <p>
+            <span class="h2">8+</span>
+            <strong class="h5 mb-0">
+              years longevity
+              <br>
+              of support
+            </strong>
+          </p>
+        </div>
+        <div class="col-12 col-xl-3 pt-4 pt-xl-0 justify-content-center">
+          <p>
+            <span class="h2">1-2</span>
+            <strong class="h5 mb-0">
+              products/year gets
+              <br>
+              to Series A funding
+            </strong>
+          </p>
         </div>
       </div><!-- /.row -->
-    </div>
-  </header>
-  <section class="home-featured home-featured-our">
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-intro portfolio-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center h2 mb-5">
+            Creative software solutions that work
+          </h2>
+          <p class="text-center fs-5 mb-5 mb-lg-12">
+            Together we can create a winning product that will transform it's users’ day-to-day live for the good
+            <br class="d-none d-md-block">
+            Or simplify your business processes & reduce expenses
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card d-block mb-5 mb-lg-0">
+            <img src={{asset "images/ic-web.svg"}} alt="">
+            <div class="card-body">
+              <h3 class="h4 card-title">Web Development</h3>
+              <p class="card-text">
+                Our developers and designers are there to find the best and the most creative solutions for you  and help you end up with a reliable product and user experience
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+          <div class="card d-block">
+            <img src={{asset "images/ic-mobile.svg"}} alt="" >
+            <h3 class="h4 card-title">Custom Mobile Apps</h3>
+            <p class="card-text">
+              Mobile apps are timeless. With their number constantly rising, we make sure to deliver an amazing experience combined with high performance across multiple platforms
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+          <div class="card d-block">
+            <img src={{asset "images/ic-ux.svg"}} alt="" >
+            <h3 class="h4 card-title highlight">User Experience</h3>
+            <p class="card-text">
+              A good user experience should speak to the end user's emotions. Why? Because it's your user's perception of the product that is going to set you apart from all the other apps out there and your competition
+            </p>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-product portfolio-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center h2">
+            Round-the-clock care for your products
+          </h2>
+          <p class="text-center fs-5 text-black-50">
+            We always know what is ongoing and have a good advice
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src={{asset "images/product-care-portfolio.png"}} class="img-fluid" alt="" >
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-featured home-featured-our portfolio-featured-our">
     <div class="container">
       <div class="row">
         <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
           <h2 class="text-center h2">
-            Our products
+            In-house projects
           </h2>
           <p class="text-center fs-5">
             We are continuously creating new solutions that transform the way you work
@@ -45,18 +145,18 @@ into the {body} of the default.hbs template --}}
       </div><!-- /.row -->
     </div><!-- /.container -->
     <div class="container">
-      <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
-          <img src="{{ asset "images/featured-ruby-ci.png"}}" alt="">
+      <div class="row home-featured-row flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6">
+          <img src={{asset "images/featured-ruby-ci.png"}} class="img-fluid"alt="" >
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">Ruby.ci</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-design.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}} alt="" >
+                <img src={{asset "images/ic-design.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Best CI platform for your Rails application</h4>
@@ -75,13 +175,13 @@ into the {body} of the default.hbs template --}}
         </div>
       </div><!-- /.row -->
       <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">Sniffler</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">The most attentive code reviewer</h4>
@@ -97,22 +197,22 @@ into the {body} of the default.hbs template --}}
             </a>
           </div>
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
-          <img src="{{ asset "images/featured-sniffler.png"}}" alt="">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-sniffler.png"}} alt="" >
         </div>
       </div><!-- /.row -->
-      <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
-          <img src="{{ asset "images/featured-git-puller.png"}}" alt="">
+      <div class="row home-featured-row flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-git-puller.jpg"}} alt="" >
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">GitPuller</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-design.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}}  alt="" >
+                <img src={{asset "images/ic-design.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Pull request manager </h4>
@@ -131,28 +231,28 @@ into the {body} of the default.hbs template --}}
       </div><!-- /.row -->
     </div><!-- /.container -->
   </section><!-- /section -->
-  <section class="home-featured">
+  <section class="home-featured portfolio-featured">
     <div class="container">
       <div class="row">
         <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
           <h2 class="text-center h2">
-            Featured projects
+            Featured
           </h2>
           <p class="text-center fs-5">
-            Here are a few recent works we are proud of. For more check our <a href="https://link.kolosek.com/c358e220" target="_blank">Portfolio</a>
+            We have handpicked a few projects to showcase our multifaceted expertise
           </p>
         </div>
       </div><!-- /.row -->
     </div><!-- /.container -->
     <div class="container">
       <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">The Next Closet</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Marketplace</h4>
@@ -169,21 +269,21 @@ into the {body} of the default.hbs template --}}
             </a>
           </div>
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
-          <img src="{{ asset "images/featured-next-closet.png"}}" alt="">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-next-closet.png"}} alt="" >
         </div>
       </div><!-- /.row -->
-      <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
-          <img src="{{ asset "images/featured-oschool.png"}}" alt="">
+      <div class="row home-featured-row flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-oschool.png"}} alt="" >
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">O.school</h3>
               <div class="project-services-icons">
-                <img src="assets/images/ic-research.svg" alt="" >
-                <img src="assets/images/ic-development.svg" alt="" >
+                <img src={{asset "images/ic-research.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Educational platform</h4>
@@ -198,15 +298,14 @@ into the {body} of the default.hbs template --}}
           </div>
         </div>
       </div><!-- /.row -->
-
       <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">MoviePilot</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Your guide to films & cinemas</h4>
@@ -223,21 +322,21 @@ into the {body} of the default.hbs template --}}
             </a>
           </div>
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
-          <img src="{{ asset "images/featured-movie-pilot.png"}}" alt="">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-movie-pilot.png"}} alt="" >
         </div>
       </div><!-- /.row -->
-      <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
-          <img src="{{ asset "images/featured-boardspan.png"}}" alt="">
+      <div class="row home-featured-row flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-boardspan.png"}} alt="" >
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">Boardspan</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}}  alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Governance application</h4>
@@ -259,13 +358,13 @@ into the {body} of the default.hbs template --}}
         </div>
       </div><!-- /.row -->
       <div class="row home-featured-row">
-        <div class="col-12 col-xl-6">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="d-flex align-items-center">
               <h3 class="card-title">WRAP</h3>
               <div class="project-services-icons">
-                <img src="{{ asset "images/ic-research.svg"}}" alt="">
-                <img src="{{ asset "images/ic-development.svg"}}" alt="">
+                <img src={{asset "images/ic-research.svg"}} alt="" >
+                <img src={{asset "images/ic-development.svg"}} alt="" >
               </div>
             </div>
             <h4 class="h5">Mobile engagement technology</h4>
@@ -281,8 +380,81 @@ into the {body} of the default.hbs template --}}
             </a>
           </div>
         </div>
-        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
-          <img src="{{ asset "images/featured-wrap.png"}}" alt="">
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src={{asset "images/featured-wrap.png"}} alt="" >
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="home-tabbed portfolio-tabbed">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 d-flex align-items-center flex-column mb-0">
+          <h2 class="text-center h2 mb-5">
+            Prioritizing privacy & security
+          </h2>
+          <p class="text-center fs-6">
+            We believe in process driven development & privacy of the data
+            <br>
+            <strong>ISO 9001:2013, ISO 27001:2013 USA certification</strong>
+          </p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="partners home-partners portfolio-partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            TRUSTED BY
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-closet.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-boardspan.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-squire.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-simone-leblanc.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images//logo-listium.png"}} alt="" ></a>
+          <a href="#" class="d-md-none"><img class="img-fluid" src={{asset "images/logo-oschool.png"}} alt="" ></a>
+        </div>
+        <div class="col-12">
+          <a href="#" class="d-none d-md-flex"><img class="img-fluid" src={{asset "images/logo-oschool.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-movie-pilot.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-wrap.png"}}  alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-ruby-ci.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-versa-commerce.png"}} alt="" ></a>
+          <a href="#"><img class="img-fluid" src={{asset "images/logo-style-myle.png"}} alt="" ></a>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /section -->
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+          <h2 class="text-center h1">
+            Get in touch
+          </h2>
+          <div class="posting-form cover">
+            <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "1118038",
+              region: "na1",
+              formId: "0207a4e3-9ea2-4b7b-a5d2-b8eb561ba7dd",
+              locale: 'en',
+              version: "V2_PRERELEASE",
+              onFormSubmit: function($form) {
+                $('.cover').removeClass('cover');
+                ga('send', 'event', 'conversion', 'contact');
+                setFormParameters($form)
+              } 
+            });
+            </script>
+          </div>
         </div>
       </div><!-- /.row -->
     </div><!-- /.container -->
