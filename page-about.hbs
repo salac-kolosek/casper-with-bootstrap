@@ -229,6 +229,9 @@ into the {body} of the default.hbs template --}}
             Make it happen
           </h2>
           <div class="posting-form cover">
+            <style type="text/css">
+              .hs_lastname{background-color:red}
+            </style>
             <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
             <script>
               hbspt.forms.create({
@@ -236,6 +239,7 @@ into the {body} of the default.hbs template --}}
               region: "na1",
               formId: "0207a4e3-9ea2-4b7b-a5d2-b8eb561ba7dd",
               locale: 'en',
+              cssClass: "mySiteForms",
               version: "V2_PRERELEASE",
               onFormSubmit: function($form) {
                 $('.cover').removeClass('cover');
