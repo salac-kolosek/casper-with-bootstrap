@@ -2,7 +2,41 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-{{> navigation }}
+<header id="header" class="header-alt">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img class="logo" src={{asset "images/logo-white.svg"}} alt="">
+      </a>
+      <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="/featured">Featured projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pe-0" href="/contact">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- /nav -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10">
+        <h1>
+          So, let's provide your customers with an <span>inspiring</span> product experience
+        </h1>
+        <p>
+          State-of-the-art front-end & back-end systems
+        </p>
+        <a href="/contact" class="btn btn-outline-secondary btn-outline-secondary-alt" data-text="Start your Project">Start your Project</a>
+      </div>
+    </div><!-- /.row -->
+  </div>
+</header><!-- /#header -->
 
 <main class="portfolio">
   <section class="home-ux portfolio-ux">
@@ -635,4 +669,43 @@ into the {body} of the default.hbs template --}}
   </section><!-- /section -->
 </main><!-- /main -->
 
-{{> footer }}
+ <footer id="footer" class="footer-alt">
+  <div class="container">
+    <h5 class="h2"><span>Just make it happen.</span></h5>
+    <div class="row text-center text-md-start">
+      <div class="col-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-3 offset-xl-3 mb-5 mb-md-0">
+        <p>
+          <span>Say hello at:</span>
+          <br>
+          <a href="mailto:hello@kolosek.com"><img src={{asset "images/ic-mail.svg"}} alt=""> hello@kolosek.com</a>
+          <a href="#" class="btn btn-outline-secondary btn-outline-secondary-alt mx-auto ms-md-0 me-md-0" data-text="Schedule a meeting">Schedule a meeting</a>
+        </p>
+      </div>
+      <div class="col-12 col-md-5 col-lg-4 col-xl-4">
+        <p>
+          &nbsp;
+          <br>
+          <img src={{asset "images/ic-home.svg"}} alt=""> Novi Sad, Serbia, Europe
+          <a href="https://www.kolosek.com" class="btn btn-outline-secondary-alt mx-auto ms-md-0 me-md-0" data-text="Kolosek.com">
+            Kolosek.com
+          </a>
+        </p>
+      </div>
+    </div><!-- /.row -->
+    <div class="row row-copyright">
+      <div class="col-12 col-md-4 text-center text-md-start py-2 py-md-0">
+        2023  © All rights reserved
+      </div>
+      <div class="col-12 col-md-4 d-md-flex justify-content-md-center text-center text-md-start py-2 py-md-0">
+        <a href="https://github.com/kolosek" target="_blank"><img src={{asset "images/ic-git.svg"}} alt="" ></a>
+        <a href="https://www.facebook.com/Kolosekcom/" target="_blank"><img src={{asset "images/ic-facebook.svg"}} alt="" ></a>
+        <a href="https://www.instagram.com/kolosekcom/?hl=en" target="_blank"><img src={{asset "images/ic-instagram.svg"}} alt="" ></a>
+        <a href="https://twitter.com/kolosekcom" target="_blank"><img src={{asset "images/ic-twitter.svg"}} alt="" ></a>
+        <a href="https://rs.linkedin.com/company/kolosek-it" target="_blank"><img src={{asset "images/ic-linkedin.svg"}} class="pe-0" alt="" ></a>
+      </div>
+      <div class="col-12 col-md-4 d-md-flex justify-content-md-end text-center text-md-start py-2 py-md-0">
+        Made by&nbsp;<a href="https://www.kolosek.com">Kolosek</a>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</footer><!-- /#footer -->
