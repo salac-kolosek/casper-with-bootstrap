@@ -1,2 +1,2 @@
-$(document).ready(function(){var o=$(".sidebar-container"),t=$(".footer");$(window).scroll(function(){$(o).offset().top,$(o).height();$(t).offset().top<=$(window).scrollTop()+800?$(o).hide():$(o).show()})});
+$(document).ready(function(){var n=$(".sidebar-container"),e=$(".footer");$(window).scroll(function(){$(n).offset().top,$(n).height();var o=$(e).offset().top,t=$(window).scrollTop(),i=$(window).width();o<=t+800||i<1650?$(n).hide():$(n).show()})});
 //# sourceMappingURL=sidebar.js.map
