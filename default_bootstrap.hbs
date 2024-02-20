@@ -3,7 +3,11 @@
 <head>
 
     {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
-    <title>Kolosek | Ruby on Rails development company</title>
+    {{#is "home"}}
+        <title>Kolosek | Ruby on Rails development company</title>
+    {{else}}
+        <title>{{meta_title}} | Kolosek</title>
+    {{/is}}
     <link rel="icon" href="{{asset "images/favicon.svg"}}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{asset "images/apple-touch-icon.png"}}"><!-- 180×180 -->
     <meta charset="utf-8" />
